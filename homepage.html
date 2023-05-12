@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Study Material Website</title>
+	<link rel="stylesheet" href="style1.css">
+	<style>
+		article {
+			float: left;
+  			padding: 20px;
+  			width: 45%;
+  			background-color: #f1f1f1;
+  			height: 300px;
+		}
+	</style>
+	<style>
+		
+
+		input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+		</style>
+</head>
+<body style="background-color:rgb(16, 183, 60);">
+
+	<script src="app.js"></script>
+	<header>
+		<nav>
+			<a href="#" class="logo">
+                        <img src="logo.jpg" alt="logo" style="width:50px;height:50px;align:right;">
+           		</a>
+
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#branch">Branch</a></li>
+				<li><a href="#resources">Resources</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+				 
+			</ul>
+			<div class="srch">
+				<input type="text" class="search" placeholder="Search here...">
+				<img src="images/icon/search.png" alt="search" onclick=slide()>
+			</div>
+			
+		</nav>
+	</header>
+
+	<script>
+      // Get all the parent list items
+      const parentItems = document.querySelectorAll('.parent');
+      
+      // Loop through the parent list items
+      for (let i = 0; i < parentItems.length; i++) {
+        const parentItem = parentItems[i];
+        
+        // Add a click event listener to each parent item
+        parentItem.addEventListener('click', function() {
+          // Get the child list for this parent item
+          const childList = parentItem.querySelector('.child-list');
+          
+          // Toggle the display of the child list
+          if (childList.style.display === 'none') {
+            childList.style.display = 'block';
+          } else {
+            childList.style.display = 'none';
+          }
+        });
+      }
+    	</script>
+	
+	<main>
+		<section id="home">
+		<h2>Home</h2>
+			<h1>Welcome to the Study Material Website</h1>
+			<p>Here, you can find study materials for various branches to help you learn and improve your knowledge.</p>
+			<a href="#home">Get Started</a>
+		</section>
+		<section id="branch">
+			<h2>Branch</h2>
+			<div class="branch">
+				<h3>CSE</h3>
+				<p>Computational Science and Engineering (CSE) is a discipline devoted to the study and advancement of computational methods and data analysis techniques to analyze and understand natural and engineered systems.</p>
+				<a href="cse.html">View Resources</a>
+			</div>
+			<div class="branch">
+				<h3>EEE</h3>
+				<p>Electrical & Electronics Engineering (EEE), deals with the engineering problems, opportunities and needs of electrical, electronics, computer, telecommunication systems and related industries.</p>
+				<a href="eee.html">View Resources</a>
+			</div>
+			<div class="branch">
+				<h3>Civil</h3>
+				<p>Civil engineering is the application of physical and scientific principles for the design, development and maintenance of both the constructed and the naturally built environment.</p>
+				<a href="civil.html">View Resources</a>
+			</div>
+			<div class="branch">
+				<h3>Mechanical</h3>
+				<p>Mechanical engineering is the application of the principles and problem-solving techniques of engineering from design to manufacturing to the marketplace for any object.</p>
+				<a href="civil.html">View Resources</a>
+			</div>
+			<div class="branch">
+				<h3>ECE</h3>
+				<p>Electronics & Communication Engineering deals with the electronic devices, circuits, communication equipments like transmitter, receiver, integrated circuits (IC).</p>
+				<a href="ece.html">View Resources</a>
+			</div>
+			<div class="branch">
+				<h3>Chemical</h3>
+				<p>Chemical engineering is an engineering field which deals with the study of operation and design of chemical plants as well as methods of improving production.</p>
+				<a href="chemical.html">View Resources</a>
+			</div>
+			<div class="branch">
+				<h3>Biotech</h3>
+				<p>Biotech is the fusion of both biology and technology for the research and development of new products. It is an engineering discipline—the field of chemical engineering and applied biology—that includes engineering living organisms.</p>
+				<a href="biotech.html">View Resources</a>
+			</div>
+			<div class="branch">
+				<h3>Matellurgy</h3>
+				<p>Metallurgy is a branch of engineering which deals with the study in detail about various metals and its application in our daily lives.</p>
+				<a href="metallurgy.html">View Resources</a>
+			</div>
+		</section>
+		<section id="resources">
+			<h2>Resources</h2>
+			<ul>
+				<li><a href="http://www.geeksforgeeks.org/">GeeksforGeeks</a></li>
+				<li><a href="http://www.stackoverflow.com/">Stack Overflow</a></li>
+				<li><a href="https://www.javatpoint.com/">Java Point</a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul>
+		</section>
+		<section id="about">
+			<h2>About Us</h2>
+			<div class="side-text">
+				<h2>What you think about us ?</h2>
+				<p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research.<br> Educational website can include websites that have games, videos or topic related resources that act as tools to enhance learning and supplement classroom teaching. These websites help make the process of learning entertaining and attractive to the student, especially in today's age. <br>Using HTML(HyperText Markup Language), CSS(Cascading Style Sheet), JavaScript, we can make learning more easier and in a interesting way.</p>
+			</div>
+			<article><p>This website is made by Praveen kumar and Rakesh Kumar.<br>
+We always thinks about that the students have always face to findout the study material  for thier branches during exam time and other time. So we have tried to provide all study
+material at single platform for all branches.<br>
+It will help all the students. We also tried to solve their problem by some senior students or previous year toppers of the universities to give perfect help in their doubts.</p></article>
+            <a href="#" class="logo">
+                <img src="Praveen Photo.jpg" alt="praveen_photo" style="width:300px;height:400px;">
+				<img src="Rakesh Photo.jpg" alt="Rakesh_photo" style="width:300px;height:400px;">
+           		</a>
+		</section>
+		
+	<!-- CONTACT US -->
+	<div class="diffSection" id="contactus_section">
+		<center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+			<form action="praveenkumar11042001@gmail.com" method="post" enctype="text/plain">
+				<label>First Name <span class="imp">*</span></label>
+				<input type="text" placeholder="Enter First Name" name="firstname" required>
+				<label>Last Name</label>
+				<input type="text" placeholder="Enter Last Name" name="lastname" required>
+				
+				<label>Email <span class="imp">*</span></label><br>
+				<input type="email" placeholder="Enter Your email-Id" name="mail" style="width: 100%" required="required"><br>
+
+				<label>Message <span class="imp">*</span></label><br>
+				<input type="text" placeholder="Type your message here" name="message" style="width: 100%" required="required"><br>
+
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+
+<!-- FEEDBACK -->
+	<center><h1>Feedback</h1></center>
+	<div class="title2" id="feedBACK">
+		<span>Give Feedback</span>
+		<div class="shortdesc2">
+			<p>Please share your valuable feedback to us</p>
+		</div>
+	</div>
+
+	<div class="feedbox">
+		<div class="feed">
+			<form action="praveenkumar11042001@gmail.com" method="post" enctype="text/plain">
+				<label>Your Name</label><br>
+				<input type="text" name="" class="fname" required="required" placeholder="Your Name"><br>
+				<label>Email</label><br>
+				<input type="email" name="mail" required="required" placeholder ="Email-Id"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional" placeholder="Your feedback"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+		</div>
+	</div>
+
+<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #FA4B37, #DF2771); margin-top: 50px;" 
+	    direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20">
+	    <div class="marqu">“Education is the passport to the future, for tomorrow belongs to those who prepare for it today.
+		” “Your attitude, not your aptitude, will determine your altitude.” “If you think education is expensive, try ignorance.
+		” “The only person who is educated is the one who has learned how to learn …and change.”
+	    </div>
+    </marquee>
+
+</main>	
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="images/icon/logo - Copy.png" style="width: 200px;">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="images/icon\fb.png"></a>
+					<a href="#"><img src="images/icon\insta.png"></a>
+					<a href="#"><img src="images/icon\tt.png"></a>
+					<a href="#"><img src="images/icon\ytube.png"></a>
+					<a href="#"><img src="images/icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2023 Created By Praveen Kumar, Rakesh Kumar All Rights Reserved.</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Our Newsletter</h1>
+				<div class="border"></div><br>
+				<p>Enter Your Email to get our News and updates.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+	
+
+</body>
+</html>
+
+
